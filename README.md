@@ -1,330 +1,174 @@
 # QLX-I
 
-## How To Submit Your Exercises
+## QLX Institute
 
-[Watch Video](https://www.youtube.com/watch?v=psDD60rq0s4)
+### Documentation
 
-[![Create A Github Repository To Save Answers](https://img.youtube.com/vi/psDD60rq0s4/0.jpg)](https://www.youtube.com/watch?v=psDD60rq0s4)
+QLX-I [Data Science Setup and Installation Checklist](http://qlx.services/enablement/files/qlx-iDataScienceChecklist.pdf)
 
-## Installation Required
+<!-- 
 
-In order to use Git Bash commands from command line, you need to install Git based on the operating system you are using: 
+# Tech Talent South
 
-- [Git For Windows](https://gitforwindows.org/)
-- [Git For Mac OS](https://git-scm.com/download/mac)
+## Tech Talent South Enablement
 
-## Creating a RSA SSH Key
 
-In order to upload to the QLX Github you are required to create a RSA SSH key (Rivest-Shamir-Adleman public-key encryption Secure Shell).  First check at the command line if you have one already by submitting the following: 
+### Documentation
 
-```
-    > ~ cat ~/.ssh/id_rsa.pub
-```
+Tech Talent South [Data Science Setup and Installation Checklist](http://qlx.services/enablement/files/TTSDataScienceChecklist.pdf)
 
-If you see below, it means you do not have a RSA SSH key generated: 
+!-->
 
-```
-cat: /Users/username/.ssh/id_rsa.pub: No such file or directory
-```
+[A Whirlwind Tour of Python by Jake VanderPlas](http://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf) (O’Reilly). Copyright 2016 O’Reilly Media, Inc., 978-1-491-96465-1.
 
-To create a RSA SSH Key type the following command in command line and be sure to substitute the email address with yours.
+[Python Data Science Handbook by Jake VanderPlas](https://github.com/jakevdp/PythonDataScienceHandbook) (O’Reilly). Copyright 2016 O’Reilly Media, Inc., 978-1-491-91205-8.
 
-```
-~ ssh-keygen -t rsa -C "email.addresss@company.com" -b 4096
+- - - 
 
-Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/username/.ssh/id_rsa): 
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
-Your identification has been saved in /Users/username/.ssh/id_rsa.
-Your public key has been saved in /Users/username/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:LiZbrye+gK/aZBPNIynEtwkW0WXHRCcpoeSwVYQOubQ email.addresss@company.com
-The key's randomart image is:
-+---[RSA 4096]----+
-| ++o=*==..       |
-|.+Boo..oo        |
-|.*=+  .          |
-|oEo=o            |
-|. +o+   S        |
-| . + . .         |
-|  = o + .        |
-| + o *.o.        |
-|..o.o.+=.        |
-+----[SHA256]-----+
-```
+## Useful Links
 
-Next you need to copy the RSA SSH Key into your clipboard to update your settings for QLX Github.
 
-```
-pbcopy < ~/.ssh/id_rsa.pub
-```
 
-Paste your clipboard into the SSH Profile Settings of your QLX Github Account. 
+**Github** - https://git.qlx.com/gsjackson/QLX-I/
 
-![Copy Paste RSA SSH Key](files/qlx_github_ssh.png)
+**Slack** - https://qlx-i.slack.com
 
-## Downloading The QLX-I Github Repository
+<!--
 
-![Copy Paste Git Hub Repository Git URL](files/qlx_github_clone.png)
+**Github** - https://github.com/enterlifeonline/techtalentsouth/tree/master/datascience
 
-Simply click on the cut and paste icon right of the URL to copy the Git URL, then from command line submit the following commands: 
+**Viewer** - https://nbviewer.jupyter.org/github/enterlifeonline/techtalentsouth/tree/master/datascience/
 
-```
-    > git config --global user.name "Your Name"
-    > git config --global user.email "your.email@company.com"
-    >
-    > cd Documents
-    > cd Repositories
-    >
-    > git clone git@54.156.216.189:gsjackson/QLX-I.git
-    > 
-    > cd QLX-I
-    > ls
-```
-- - -
+**Slack** - https://tts-students.slack.com
 
-## Other Github Commmands
+!-->
 
-[!Gitlab Commands](files/gitlab.png)
+**Tools** 
+
+- Powershell - https://aka.ms/powershell
+- Hyper - https://hyper.is 
+- Git Bash (for Windows) - https://gitforwindows.org/
 
 - - -
+## Google Collab
 
-## Mastering Github
+### Data Science Fundamentals: Python
+ 
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/enterlifeonline/techtalentsouth/blob/master/datascience/python/index.ipynb)
 
-> GitHub is often used as a basic Git host, but its platform has so much more to offer.
-> From simple and powerful issues and pull requests, to advanced features for power users
-> and integrators, it’s a tool worth knowing well in its own right. This session will
-> review everything you need to know to master collaboration with GitHub, from best
-> practices for GitHub Issues and how it represents basic Git concepts, to hidden features
-> and the tools enabling its developer ecosystem.
+Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.
 
-- Git Hosting
-    - Create Repository
-        - With README
-        - With [.gitignore](https://github.com/github/gitignore)
-        - With [open source license](http://choosealicense.com/)
-        - Without inital commit (can't clone)
-    - Watch
-        - Not watching, Watching, Ignoring
-        - [Notifications Settings](https://github.com/settings/notifications)
-        - [User Watching List](https://github.com/watching)
-    - Fork
-        - Complete copy of the Repository
-        - Can fork to user or organization
-        - Part of parent project's "Network"
-        - Can easily open Pull Requests to propose contributions
-    - Code
-        - Find file
-            - Type <kbd>t</kbd> to activate
-            - (Type <kbd>?</kbd> to see all keyboard shortcuts)
-        - Search
-            - Search in code, commit messages, issues
-            - Scope: repo, organization or global
-        - Files
+### Data Science Fundamentals: R
 
-            ```
-            {owner}/{repo}/tree/{commit-ish}/{path/to/tree}
-            ```
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/enterlifeonline/techtalentsouth/blob/master/datascience/r/index.ipynb)
 
-        - Content
+R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.
 
-            ```
-            {owner}/{repo}/blob/{commit-ish}/{path/to/blob}
-            ```
+### Data Science Fundamentals: Julia
 
-        - Raw Download
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/enterlifeonline/techtalentsouth/blob/master/datascience/julia/index.ipynb)
 
-            ```
-            {owner}/{repo}/raw/{commit-ish}/{path/to/blob}
-            ```
+Julia is a high-level, high-performance, dynamic programming language. While it is a general purpose language and can be used to write any application, many of its features are well-suited for high-performance numerical analysis and computational science.
 
-        - Blame
+### Data Science Fundamentals: Python-based Web Framework - Django 
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/enterlifeonline/techtalentsouth/blob/master/datascience/frameworks/18_mod_django/index.ipynb)
 
-            ```
-            {owner}/{repo}/blame/{commit-ish}/{path/to/blob}
-            ```
+Django is a Python-based free and open-source web framework, which follows the model-template-view architectural pattern.
 
-        - History
+### Data Science Fundamentals: Python-based Web Framework - Flask 
 
-            ```
-            {owner}/{repo}/commits/{commit-ish}/{path/to/blob}
-            {owner}/{repo}/commits/{commit-ish}/{path/to/tree}
-            ```
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/enterlifeonline/techtalentsouth/blob/master/datascience/frameworks/19_mod_flask/index.ipynb)
 
-            - Filter by query string ([example](https://github.com/dahlbyk/posh-git/commits/master?since=2015-12-25&until=2016-01-01))
-                - `author=dahlbyk`
-                - `since=2015-12-25`
-                - `until=2016-01-01`
-        - Single Commit
+Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
 
-            ```
-            {owner}/{repo}/commit/{commit-ish}
-            {owner}/{repo}/commit/{commit-ish}.diff
-            {owner}/{repo}/commit/{commit-ish}.patch
-            ```
+## Software
 
-            - Containing branches and PRs
-            - Can comment on lines and commit, but generally prefer comment in PR
-            - Add `?w=1` to URL to ignore whitespace in diff
-              ([example](https://github.com/dahlbyk/posh-git/commit/85ab3d7016a080c1927443524b4e3044eb9e588c?w=1))
-        - Modification
-            - New File / Upload, Edit File, Delete
-            - Commit to current branch _or_ create new branch for Pull Request
-        - Hacking `commit-ish`
-            - Previous commit: `master~`
-            - 100 commits ago: `master~100`
-            - Previous branch heads (`reflog`)
-                - `master@{1}`
-                - `master@{yesterday}`
-                - `master@{2016-01-01}`
-            - More at `git help revisions`
-        - Linking
-            - Type <kbd>y</kbd> to resolve `commit-ish` to canonical/permanent link
-            - Click a line number to highlight and link to that line (`#L123`)
-            - Hold Shift and click another line to highlight/link range (`#L123-L456`)
-    - Branches
-        - Can create and delete branches
-        - General Git Tips
-            - "Remote tracking branch" is what was on GitHub at last `fetch`/`pull`
-                - `refs/remotes/<remote>/<branch>` AKA `<remote>/<branch>`
-                - Configured with `remote.<name>.fetch`
-                    - `+refs/heads/*:refs/remotes/origin/*`
-                    - GitHub PR heads: `+refs/pull/*/head:refs/remotes/origin/pr/*`
-                - Deleted branches' tracking refs are not automatically deleted
-                    - `git remote prune origin`
-                    - `git fetch --prune`
-                    - Always want to prune?
-                        - `git config remote.<name>.prune true`
-                        - `git config fetch.prune true`
-            - Start work on a remote branch
+Anaconda is a free and open-source[6] distribution of the Python and R programming languages for scientific computing (data science, machine learning applications, large-scale data processing, predictive analytics, etc.), that aims to simplify package management and deployment. The distribution includes data-science packages suitable for Windows, Linux, and macOS. 
 
-                ```
-                > git checkout -t origin/my-branch
-                On branch my-branch
-                Your branch is up-to-date with 'origin/my-branch'.
-                nothing to commit, working tree clean
-                ```
+- Anaconda (packages included) - https://www.anaconda.com/products/individual
+- Miniconda (only Conda and Python packages included) - https://docs.conda.io/en/latest/miniconda.html
 
-                - Or, if `<branch>` exists on only one remote: `git checkout <branch>`
-                - Tracking lives in config
+### Installation
 
-                    ```
-                    git config branch.master.remote         # origin
-                    git config branch.master.merge          # refs/heads/master
-                    ```
+To install the requirements using [conda](http://conda.pydata.org), run the following at the command-line:
 
-            - To set up tracking when pushing new branch
+```
+$ conda install --file requirements.txt
+```
 
-                ```
-                > git push -u origin HEAD
-                Total 0 (delta 0), reused 0 (delta 0)
-                To https://github.com/dahlbyk/my-repo.git
-                * [new branch]      HEAD -> my-branch
-                Branch my-branch set up to track remote branch my-branch from origin.
-                ```
+To create a stand-alone environment named ``PDSH`` with Python 3.5 and all the required package versions, run the following:
 
-                - Using `HEAD` pushes current branch to branch of same name
-                    - `git config --global alias.pc "push -u origin HEAD"`
-                - Can also use branch name to push any branch to branch of same name
-                - Can also use `source:destination` to push to branch of different name
-                    - `git push origin my-branch:my-awesome-branch`
-                - Have a convention to prefix branches with username?
-                    - `git config alias.pc = !git push -u origin HEAD:dahlbyk/$(git symbolic-ref --short HEAD)`
-                - To delete branch, `source` is empty: `git push origin :my-branch`
-        - Default Branch
-            - Shown when repo is opened
-            - Set as `<remote>/HEAD` on `git clone`
-                - Handy for global aliases to not assume `master`
-                - `git config --global alias.new "log --oneline --decorate --reverse origin.."`
-        - Protected Branches
-            - Disables force-pushes to this branch and prevents it from being deleted.
-            - (optional) Require pull request reviews before merging
-            - (optional) Require status checks to pass before merging
-        - Compare
+```
+$ conda create -n PDSH python=3.5 --file requirements.txt
+```
 
-            ```
-            {owner}/{repo}/compare/{revision range}
-            {owner}/{repo}/compare/{revision range}.diff
-            {owner}/{repo}/compare/{revision range}.patch
-            ```
+You can read more about using conda environments in the [Managing Environments](http://conda.pydata.org/docs/using/envs.html) section of the conda documentation.
 
-            - `revision range` can either be a range (`<base>...<head>`)…
-            - …or a `commit-ish`, equivalent to `<default>...<head>`
-            - If `<base>` and `<head>` are both branches, can open a Pull Request
-            - `<base>` and `<head>` can include a fork prefix, e.g.
-              [`dahlbyk:master...coridrew:tfs`](https://github.com/dahlbyk/posh-git/compare/dahlbyk:master...coridrew:tfs)
-- Issues
-    - [GitHub-Flavored Markdown](https://guides.github.com/features/mastering-markdown/)
-        - Syntax highlighting
-        - Task lists
-        - Auto-linking
-            - Commit SHAs (`deadbeef` or `owner/repo@deadbeef`)
-            - Issue/PR references (`#1`, `repo#2`, `owner/repo#3`)
-            - Parsing of GitHub URLs (e.g. "#1 (comment)")
-    - Issue/PR mentions in issues/PRs/commits show up as references
-        - Build a graph of inter-related issues
-    - Milestones (due date, completion %)
-    - Labels
-    - Assignees
-        - New: multiple assignees
-- Pull Requests
+## Video Instructions
 
-    ```
-    {owner}/{repo}/pull/{number}
-    {owner}/{repo}/pull/{number}.diff
-    {owner}/{repo}/pull/{number}.patch
-    ```
+**[How To Install/Startup On Windows 10](https://www.youtube.com/watch?v=WlkEw0zDBzg)**
+---
+[![How To Install/Startup on Windows 10](https://img.youtube.com/vi/WlkEw0zDBzg/0.jpg)](https://www.youtube.com/watch?v=WlkEw0zDBzg)
+---
 
-    - Formerly "an issue attached to a branch"
-        - Could even use API to convert issue to PR…but you shouldn't
-    - Commits
-        - Used to link away to raw commit
-            - comments on commit/lines didn't work well; lost after `rebase`
-        - Now commits keep PR context, comments work much better
-    - Changes
-        - Comment per line
-        - Standalone or collected in a Review
-        - Can limit to changes since last review, or specific commit
-    - Deployments
-        - [Heroku Review Apps](https://devcenter.heroku.com/articles/github-integration-review-apps)
-    - Checks
-        - CI
-        - Linting
-        - Review Approval
-- Projects
-    - Add issues or notes to columns
-    - No workflow (e.g. Closed move to last column)
-    - Also check out [HuBoard](https://huboard.com/)
-- Repo Settings
-    - Merge button
-        - Merge commits
-        - Squash merging (noooooooo)
-        - Rebase merging (finally)
-        - Want: rebase then merge commit
+**[How To Install/Startup On Mac OS](https://www.youtube.com/watch?v=F1cO_gLnh60)**
+---
+[![How To Install/Startup On Mac OS](https://img.youtube.com/vi/F1cO_gLnh60/0.jpg)](https://www.youtube.com/watch?v=F1cO_gLnh60)
 
-            ```
-            --*---------*------------*--
-               \       / \          /
-                *--*--*   *--*--*--*
-            ```
+---
+**[How To Install/Startup Using ChromeOS](https://alex.miller.im/posts/data-science-chromebook-pixelbook-jupyter-python-r/)**
+---
+[![How To Install/Startup Using ChromeOS](https://img.youtube.com/vi/bhM1cCu8uXE/0.jpg)](https://www.youtube.com/watch?v=bhM1cCu8uXE)
 
-    - GitHub Pages
-        - Not just gh-pages branch any more
-        - http://up-for-grabs.net/ is 100% static and GitHub-backed
-    - [Webhooks](https://developer.github.com/webhooks/)
-    - [Integrations](https://github.com/integrations)
-        - "Services" are obsolete
-- For Developers
-    - API [v3](https://developer.github.com/v3/)
-        - [OAuth](https://developer.github.com/v3/oauth/)
-    - [GraphQL](https://developer.github.com/early-access/graphql/) Early Access
-        - Limited scope, but used internally for new features (e.g. Projects)
-    - [Integrations](https://developer.github.com/early-access/integrations/) Early Access
-        - Different from integrations directory
-        - Primarily targeting "non-user" users, e.g. no more CI admin user
-- Gist
-    - One or more files
-    - Repository
-        - No directories - blocked on push
-    - https://bl.ocks.org/
+## Markup Language
+
+- [Markup Language Cheatsheet](http://qlx.services/enablement/files/readmeMD.pdf)
+
+## Code Editors
+
+- Microsoft Visual Studio - https://visualstudio.microsoft.com/downloads/
+- Sublime 3 - https://www.sublimetext.com/3
+- Atom - https://atom.io/
+
+## Cloud
+- [Microsoft Azure](https://azure.microsoft.com/)
+
+- - - 
+
+## Package Application Managers
+
+You can install the executables of Anaconda, Conda, Python or you can use a Package Application Manager that is applicable to your operating system. This allows you to maintain, update, install and configure all the necessary software components via automated scripting.
+
+- [Brew (OS X, Linux)](https://brew.sh/)
+- [Chocolatey (Windows)](https://chocolatey.org/)
+
+## What is BREW?
+
+For Mac OS, Linux
+
+Home-brew installs the stuff you need that Apple or your Linux system didn’t.  
+[See list of all packages](https://formulae.brew.sh/formula/)
+
+
+	⁃	BREW package definition files are called “formulae”
+	⁃	BREW “cask”, just like a formula, is for GUI installs.
+	⁃	BREW “cellar” is where everything is installed /usr/local/Cellar
+
+
+The simplest way to create a formula for your own software is to create a GitHub repository called homebrew-<something>; put your formula file in it; then type brew tap <username>/<something> to add this new source of formulae to your Homebrew installation and so get access to all its formulae.
+
+Companies have internal Homebrew taps for their own utilities. There are a lot of public taps like homebrew/science for scientific software, atlassian/tap for Atlassian software, and ska-sa/tap for radio astronomy.
+
+**[Brew Formulae / Casks](https://formulae.brew.sh/)**
+
+## What is CHOCOLATEY?
+
+For Windows
+
+Chocolatey has the largest online registry of Windows packages. Chocolatey packages encapsulate everything required to manage a particular piece of software into one deployment artifact by wrapping installers, executables, zips, and/or scripts into a compiled package file.
+
+[Search all Chocolatey Packages](https://chocolatey.org/packages)
+
+- - -
+
+Copyright © 2020 Qualex Consulting Services Incorporated.
